@@ -5,8 +5,8 @@ STEP="STEP 3 : MY PLAYERS"
 
 HISTORY_NAME="history_step3"
 
-EMAIL_PROF=ops@campus-numerique-in-the-alps.com
-FROM_EMAIL=ops@campus-numerique-in-the-alps.com
+EMAIL_PROF=campus@kibatic.com
+FROM_EMAIL=campus@kibatic.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`

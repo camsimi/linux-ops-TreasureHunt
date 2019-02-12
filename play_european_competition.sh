@@ -4,10 +4,9 @@
 STEP="STEP 5 : EUROPEAN COMPETITION"
 
 HISTORY_NAME="history_step5"
-HISTORY="~/.bash_history"
 
-EMAIL_PROF=ops@campus-numerique-in-the-alps.com
-FROM_EMAIL=ops@campus-numerique-in-the-alps.com
+EMAIL_PROF=campus@kibatic.com
+FROM_EMAIL=campus@kibatic.com
 
 TEAM_FILE="my_team.txt"
 EMAIL=`cat $TEAM_FILE | grep -i mail | tr --delete ' ' | cut -d '=' -f 2`
@@ -105,5 +104,5 @@ then
     done
 else
     echo -e "\n\e[92mSUCCESS\e[0m : You won the competition !"
-    echo $'Step 5 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
+    echo $'Step 5 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A ~/.bash_history -r $FROM_EMAIL $EMAIL_PROF
 fi    
