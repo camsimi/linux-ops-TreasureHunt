@@ -4,7 +4,6 @@
 STEP="STEP 3 : MY PLAYERS"
 
 HISTORY_NAME="history_step3"
-HISTORY="~/.bash_history"
 
 EMAIL_PROF=ops@campus-numerique-in-the-alps.com
 FROM_EMAIL=ops@campus-numerique-in-the-alps.com
@@ -57,5 +56,5 @@ then
     echo -e "\n\e[31mFAIL\e[0m : Your players cost exceeded your total budget : $TOTAL_COST / $TOTAL_BUDGET"
 else    
     echo -e "\n\e[92mSUCCESS\e[0m : Your total level is ""$TOTAL_LEVEL | Your players cost : $TOTAL_COST / $TOTAL_BUDGET"
-    echo $'Step 3 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
+    echo $'Step 3 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A ~/.bash_history -r $FROM_EMAIL $EMAIL_PROF
 fi
