@@ -96,7 +96,7 @@ then
 	    [Nn]* )
 	    	echo "################" ; echo -e "\e[31mGameOver, You have lost the competition\e[0m" ;
 	    	echo -e "\e[31mYou can restart the step or the game to win the competition !\e[0m" ; echo "################" ;
-	    	echo $'Step 5 : FAIL\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
+	    	echo $'Step 5 : FAIL\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A ~/.bash_history -r $FROM_EMAIL $EMAIL_PROF
 	    	exit 1 ;;
 
 	    * ) echo "Please answer Yes (Y) or No (N)" ;;
