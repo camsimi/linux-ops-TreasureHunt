@@ -4,7 +4,6 @@
 STEP="STEP 2 : MY SPONSORS"
 
 HISTORY_NAME="history_step2"
-HISTORY="~/.bash_history"
 
 EMAIL_PROF=ops@campus-numerique-in-the-alps.com
 FROM_EMAIL=ops@campus-numerique-in-the-alps.com
@@ -34,5 +33,5 @@ then
     fi
 else
     echo -e "\n\e[92mSUCCESS\e[0m : Your total budget is ""$TOTAL_BUDGET"
-    echo $'Step 2 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
+    echo $'Step 2 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A ~/.bash_history -r $FROM_EMAIL $EMAIL_PROF
 fi
