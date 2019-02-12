@@ -4,7 +4,6 @@
 STEP="STEP 4 : MY FIRST COMPETITION"
 
 HISTORY_NAME="history_step4"
-HISTORY="~/.bash_history"
 
 EMAIL_PROF=ops@campus-numerique-in-the-alps.com
 FROM_EMAIL=ops@campus-numerique-in-the-alps.com
@@ -90,5 +89,5 @@ then
     echo -e "\n\e[31mFAIL\e[0m : You have lost the competition, try to recruite better players !"
 else
     echo -e "\n\e[92mSUCCESS\e[0m : You won the competition !"
-    echo $'Step 4 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A $HISTORY -r $FROM_EMAIL $EMAIL_PROF
+    echo $'Step 4 : OK\n'"User: $EMAIL"$'\n'"Team_Name: $TEAM_NAME"$'\n'"Motto: $MOTTO"$'\n' | mail -s "[$STEP][$TEAM_NAME]" -A ~/.bash_history -r $FROM_EMAIL $EMAIL_PROF
 fi    
